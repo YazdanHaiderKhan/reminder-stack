@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-buttons">
+        <button class="button" id="add">+</button>
+        <button class="button" id = "up">↑</button>
+        <button class="button" id="down">↓</button>
+      </div>
+      <div class="card-area">
+        <div class="nocard"></div>
+        <div class="container"></div>
+        <!-- <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1607364611429-93933b339d85?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWVzdGhldGljJTIwYm95fGVufDB8fDB8fHww"
+            alt=""
+          />
+          <h2>Yazdan Haider</h2>
+          <div class="content">
+            <p>Hometown<span>Aurangabad</span></p>
+            <p>Bookings<span>3 times</span></p>
+          </div>
+          <div class="actions">
+            <button class="call">Call</button>
+            <button class="message">Message</button>
+          </div>
+        </div> -->
+      </div>
+      <div class="priority-colors">
+        <span class="dot black" style="background-color: black" id="emergency"></span>
+        <span class="dot purple" style="background-color: purple" id="important"></span>
+        <span class="dot orange" style="background-color: orange" id="urgent"></span>
+        <span class="dot teal" style="background-color: teal" id="norush"></span>
+      </div>
+    </div>
+    <div class="formContainer">
+      <form action="">
+        <div class="textinput">
+          <input type="text" placeholder="name" id="name" />
+          <input type="text" placeholder="Hometown" id="hometown" />
+          <input type="text" placeholder="profile pic" id="profile" />
+        </div>
+        <div class="priority-choice">
+          <label id="blacklabel">
+            <input
+              type="radio"
+              name="priority"
+              value="Emergency"
+              id="black"
+            />Emergency
+          </label>
+          <label id="purplelabel">
+            <input
+              type="radio"
+              name="priority"
+              value="Important"
+              id="purple"
+            />Important
+          </label>
+          <label id="orangelabel">
+            <input
+              type="radio"
+              name="priority"
+              value="Urgent"
+              id="orange"
+            />Urgent
+          </label>
+          <label id="teallabel">
+            <input type="radio" name="priority" value="No Rush" id="teal" />No
+            Rush
+          </label>
+        </div>
+        <input type="submit" id="submit" />
+      </form>
+      <div class="back">back</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
